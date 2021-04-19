@@ -42,22 +42,22 @@ ffmpeg -version
 ```
 #### 3.1.4. google-drive-ocamlfuse (mount google drive as a folder)
 reference: https://olgabotvinnik.com/blog/googledrive-ubuntu/
-- install package
+1. install package
 ``` bash
 sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 mkdir ~/GoogleDrive
 ```
-- Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)
+2. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)
 Credentials - OAuth 2.0 Client IDs - Client ID & Client Secret
 
+3. run google-drive-ocamlfuse with headless mode
 ``` bash
 google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleusercontent.com -secret yoursecrethere
 ```
-
-- copy link generated and open\
+copy link generated and open\
 ```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```\
-- enter verification code from browser.\
+enter verification code from browser.\
 if see below message,\
 ```Access token retrieved correctly.```\
 done.

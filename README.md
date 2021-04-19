@@ -40,11 +40,16 @@ sudo apt-get install python3-pip
 sudo apt install ffmpeg
 ffmpeg -version
 ```
-#### google-drive-ocamlfuse
+#### google-drive-ocamlfuse (mount google drive as a folder)
+https://olgabotvinnik.com/blog/googledrive-ubuntu/
 ``` bash
 sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
+mkdir ~/GoogleDrive
 ```
+(get client_id and client_secret from Google Drive API)
+https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com
+
 
 ### 3.2. python packages
 #### youtube-dl

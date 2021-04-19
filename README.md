@@ -62,15 +62,18 @@ if see below message,\
 ```Access token retrieved correctly.```\
 done.
 
-(* need to remount everytime after reboot -> crontab)
+*(* need to re-mount everytime after reboot -> crontab)*
 
 ### 3.2. python packages
 #### youtube-dl
 ``` bash
 sudo pip3 install --upgrade youtube-dl
 ```
-#### 
 
+## 4. Crontab
+``` bash
+crontab -e
+```
 
 
 

@@ -26,29 +26,29 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub testuser@0.0.0.0
 
 ## 3. Install
 ### 3.1. apt-get
-#### update
+#### 3.1.1. update
 ``` bash
 sudo apt-get update
 sudo apt-get upgrade
 ```
-#### pip
+#### 3.1.2. pip
 ``` bash
 sudo apt-get install python3-pip
 ```
-#### ffmpeg
+#### 3.1.3. ffmpeg
 ``` bash
 sudo apt install ffmpeg
 ffmpeg -version
 ```
-#### google-drive-ocamlfuse (mount google drive as a folder)
-reference: https://olgabotvinnik.com/blog/googledrive-ubuntu/\
+#### 3.1.4. google-drive-ocamlfuse (mount google drive as a folder)
+reference: https://olgabotvinnik.com/blog/googledrive-ubuntu/
 - install package
 ``` bash
 sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 mkdir ~/GoogleDrive
 ```
-- Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)\
+- Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)
 Credentials - OAuth 2.0 Client IDs - Client ID & Client Secret
 
 ``` bash
@@ -65,7 +65,7 @@ done.
 *(\*need to re-mount everytime after reboot -> crontab)*
 
 ### 3.2. python packages
-#### youtube-dl
+#### 3.2.1. youtube-dl
 ``` bash
 sudo pip3 install --upgrade youtube-dl
 ```

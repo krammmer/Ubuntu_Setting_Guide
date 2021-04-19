@@ -56,13 +56,13 @@ google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleuser
 ```
 
 copy link generated and open\
-```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```
+```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```\
 enter verification code from browser.\
-if see below message,
+if see below message,\
 ```Access token retrieved correctly.```\
 done.
 
-(* need to remount everytime after reboot)
+(* need to remount everytime after reboot -> crontab)
 
 ### 3.2. python packages
 #### youtube-dl

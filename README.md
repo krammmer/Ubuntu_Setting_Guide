@@ -55,12 +55,9 @@ Credentials - OAuth 2.0 Client IDs - Client ID & Client Secret
 ``` bash
 google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleusercontent.com -secret yoursecrethere
 ```
-copy link generated and open\
-```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```\
-enter verification code from browser.\
-if see below message,\
-```Access token retrieved correctly.```\
-done.
+4. copy link generated and open ```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```
+5. enter verification code from browser. if see ```Access token retrieved correctly.```
+6. done.
 
 *(\*need to re-mount everytime after reboot -> crontab)*
 

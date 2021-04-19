@@ -5,26 +5,28 @@ ubuntu 20.04 LTS base
 ```ssh root@000.000.000.000```
 
 ## 2. Security
-### Change root password
+### 2.1. Change root password
 ```something```
-### Add Accounts (Easier way)
+### 2.2. Add Accounts (Easier way)
 ```adduser testuser```
-- automatically set password and create home directory
-### Add SSH key
+automatically set password and create home directory
+### 2.3. Add SSH key
 ```something```
 
 ## 3. Install
-### apt-get
+### 3.1.apt-get
 #### update
 ```sudo apt-get update```  
 ```sudo apt-get upgrade```
-
 #### pip
 ```sudo apt-get install python3-pip```
-
 #### ffmpeg
 ```sudo apt install ffmpeg```  
 ```ffmpeg -version```
-
-### python packages
+### 3.2. python packages
 ```sudo pip3 install --upgrade youtube-dl```
+
+
+
+
+

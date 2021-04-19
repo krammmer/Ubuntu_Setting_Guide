@@ -14,16 +14,15 @@ ubuntu 20.04 LTS base
 
 
 ## 5. apt-get
-```sudo apt-get update```
-
+### update
+```sudo apt-get update```  
 ```sudo apt-get upgrade```
 
-pip
+### pip
 ```sudo apt-get install python3-pip```
 
-ffmpeg
-```sudo apt install ffmpeg```
-
+### ffmpeg
+```sudo apt install ffmpeg```  
 ```ffmpeg -version```
 
 ## 6. python packages

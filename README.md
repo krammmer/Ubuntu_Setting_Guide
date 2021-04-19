@@ -1,1 +1,2 @@
-#Ubuntu Setting Guide
+# Ubuntu Setting Guide
+ubuntu 20.04 LTS base

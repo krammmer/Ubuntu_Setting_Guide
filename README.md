@@ -2,17 +2,17 @@
 ubuntu 20.04 LTS base
 
 ## 1. Connect
-```ssh root@0.0.0.0```
-
+```ssh root@0.0.0.0```\
+Enter initial password
 ## 2. Security
 ### 2.1. Change root password
 ```something```
 ### 2.2. Add Accounts (Easier way)
 ```adduser testuser```\
-automatically set password and create home directory
-add addtional info (just press enter to skip)
+'adduser' automatically set password and create home directory\
 ### 2.3. Add SSH key
-(client to server)
+(client side)\
+```ssh keygen```\
 ```ssh-copy-id -i ~/.ssh/id_rsa.pub testuser@0.0.0.0```
 
 ## 3. Install
@@ -23,7 +23,7 @@ add addtional info (just press enter to skip)
 #### pip
 ```sudo apt-get install python3-pip```
 #### ffmpeg
-```sudo apt install ffmpeg```  
+```sudo apt install ffmpeg```\
 ```ffmpeg -version```
 ### 3.2. python packages
 ```sudo pip3 install --upgrade youtube-dl```

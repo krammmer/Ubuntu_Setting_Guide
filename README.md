@@ -62,7 +62,7 @@ if see below message,\
 ```Access token retrieved correctly.```\
 done.
 
-*(* need to re-mount everytime after reboot -> crontab)*
+*(\* need to re-mount everytime after reboot -> crontab)*
 
 ### 3.2. python packages
 #### youtube-dl

@@ -47,8 +47,7 @@ sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 mkdir ~/GoogleDrive
 ```
-Get client_id and client_secret from Google Drive API
-https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/  
+Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)\
 Credentials - OAuth 2.0 Client IDs - Client ID & Client Secret
 
 ``` bash
@@ -62,7 +61,7 @@ if see below message,\
 ```Access token retrieved correctly.```\
 done.
 
-*(\* need to re-mount everytime after reboot -> crontab)*
+*(\*need to re-mount everytime after reboot -> crontab)*
 
 ### 3.2. python packages
 #### youtube-dl

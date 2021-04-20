@@ -35,18 +35,18 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 #### 3.1.2. pip
-``` bash
+``` sh
 sudo apt-get install python3-pip
 ```
 #### 3.1.3. ffmpeg
-``` bash
+``` sh
 sudo apt install ffmpeg
 ffmpeg -version
 ```
 #### 3.1.4. google-drive-ocamlfuse (mount google drive as a folder)
 reference: https://olgabotvinnik.com/blog/googledrive-ubuntu/
 1. install package
-``` bash
+``` sh
 sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 mkdir ~/GoogleDrive

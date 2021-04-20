@@ -7,24 +7,27 @@ ssh root@0.0.0.0
 ```
 Enter initial password
 
-## 1. Security
+## 2. Security
 ### 2.1. Change root password
 ``` bash
-something
+passwd
+New password: 
+Retype new password: 
 ```
-### 1.1. Add Accounts (Easier way)
+### 2.2. Add Accounts (Easier way)
 ``` bash
 adduser testuser
 ```
 'adduser' automatically set password and create home directory
-### 1.1. Add SSH key
+### 2.3. Add SSH key
 (client side)
 ``` bash
 ssh keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub testuser@0.0.0.0
+ssh -i ~/.ssh/id_rsa testuser@0.0.0.0
 ```
 
-## 1. Install
+## 3. Install
 ### 3.1. apt-get
 #### 3.1.1. update
 ``` bash
@@ -48,7 +51,7 @@ sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 mkdir ~/GoogleDrive
 ```
-1. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)\
+1. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)  
 Credentials - OAuth 2.0 Client IDs - Client ID & Client Secret
 
 1. run google-drive-ocamlfuse with headless mode

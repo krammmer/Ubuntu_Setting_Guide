@@ -61,12 +61,16 @@ google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleuser
 5. enter verification code from browser. if see ```Access token retrieved correctly.```
 6. done.
 
-_**(\*need to re-mount everytime after reboot -> crontab)**_
+    _**(\*need to re-mount everytime after reboot -> crontab)**_
 
 ### 3.2. python packages
 #### 3.2.1. youtube-dl
 ``` sh
 sudo pip3 install --upgrade youtube-dl
+```
+#### 3.2.2. Beautiful Soap
+``` sh
+pip install beautifulsoup4
 ```
 
 ## 4. Crontab

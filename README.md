@@ -19,7 +19,15 @@ Retype new password:
 adduser testuser
 ```
 'adduser' automatically set password and create home directory
-### 2.3. Add SSH key
+### 2.3. Allow sudo privilege
+``` sh
+vi /etc/sudoers
+
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+testuser	ALL=(ALL:ALL) ALL # add testuser
+```
+### 2.4. Add SSH key
 (client side)
 ``` sh
 ssh keygen
@@ -64,7 +72,7 @@ google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleuser
 _**(\*need to re-mount everytime after reboot -> crontab)**_
 
 ### 3.2. python packages
-설치된 패키지 목록조회
+list all installed packages (except default)
 ``` sh
 pip3 list
 ```

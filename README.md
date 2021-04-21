@@ -61,18 +61,30 @@ google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleuser
 5. enter verification code from browser. if see ```Access token retrieved correctly.```
 6. done.
 
-    _**(\*need to re-mount everytime after reboot -> crontab)**_
+_**(\*need to re-mount everytime after reboot -> crontab)**_
 
 ### 3.2. python packages
+설치된 패키지 목록조회
+``` sh
+pip3 list
+```
 #### 3.2.1. youtube-dl
 ``` sh
 sudo pip3 install --upgrade youtube-dl
 ```
 #### 3.2.2. Beautiful Soap
 ``` sh
-pip install beautifulsoup4
+sudo pip3 install beautifulsoup4
 ```
-
+#### 3.2.3. python-telegram-bot
+``` sh
+sudo pip3 install python-telegram-bot
+```
+#### 3.2.4. google-api-python-client
+``` sh
+sudo pip3 install google-auth-oauthlib
+sudo pip3 install google-api-python-client
+```
 ## 4. Crontab
 ``` sh
 crontab -e

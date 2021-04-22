@@ -106,8 +106,8 @@ sudo timedatectl set-timezone Asia/Tokyo
 sudo service cron stop
 sudo service cron start
 ```
-It is available to specify timezone by using ```CRON_TZ``` variable, but only works on INSIDE of cronjob(processes which started by cron), not the excute time itself.\
-Need to change whole server timezone to run cronjob locally
+It is available to specify timezone by using ```CRON_TZ``` variable, but only works on INSIDE of cronjob(processes which started by cron), NOT the EXECUTE TIME itself.\
+Need to change whole server timezone to run cronjob locally.
 
 
 

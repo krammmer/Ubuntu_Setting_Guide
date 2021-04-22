@@ -94,8 +94,10 @@ sudo pip3 install google-auth-oauthlib
 sudo pip3 install google-api-python-client
 ```
 ## 4. Crontab
+### 4.1. Change server timezone to JST
 ``` sh
-crontab -e
+date
+sudo timedatectl set-timezone Asia/Tokyo
 ```
 
 

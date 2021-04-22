@@ -1,5 +1,5 @@
 # Ubuntu Setting Guide
-ubuntu 20.04 LTS base
+Ubuntu 20.04 LTS base
 
 ## 1. Connect
 ``` sh
@@ -18,7 +18,8 @@ Retype new password:
 ``` sh
 adduser testuser
 ```
-'adduser' automatically set password and create home directory
+'adduser' automatically set password and create home directory\
+while 'useradd' doesn't
 ### 2.3. Allow sudo privilege
 ``` sh
 vi /etc/sudoers
@@ -28,7 +29,7 @@ root	ALL=(ALL:ALL) ALL
 testuser	ALL=(ALL:ALL) ALL # add testuser
 ```
 ### 2.4. Add SSH key
-(client side)
+(client side - macOS)
 ``` sh
 ssh keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub testuser@0.0.0.0
@@ -37,7 +38,7 @@ ssh -i ~/.ssh/id_rsa testuser@0.0.0.0
 
 ## 3. Install
 ### 3.1. apt-get
-#### 3.1.1. update
+#### 3.1.1. update/upgrade
 ``` sh
 sudo apt-get update
 sudo apt-get upgrade
@@ -59,20 +60,24 @@ sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 mkdir ~/GoogleDrive
 ```
-2. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)  
+2. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)\
 Credentials - OAuth 2.0 Client IDs - Client ID & Client Secret
 3. run google-drive-ocamlfuse with headless mode
 ``` sh
 google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleusercontent.com -secret yoursecrethere
 ```
 4. copy link generated and open ```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```
-5. enter verification code from browser. if see ```Access token retrieved correctly.```
-6. done.
+5. enter verification code from browser.
+6. ```Access token retrieved correctly.```
+7. done.
 
 _**(\*need to re-mount everytime after reboot -> crontab)**_
+``` sh
+google-drive-ocamlfuse ~/Googledrive -headless
+```
 
 ### 3.2. python packages
-list all installed packages (except default)
+list all installed packages (except default installed packs)
 ``` sh
 pip3 list
 ```
@@ -98,7 +103,11 @@ sudo pip3 install google-api-python-client
 ``` sh
 date
 sudo timedatectl set-timezone Asia/Tokyo
+sudo service cron stop
+sudo service cron start
 ```
+It is available to specify timezone by using ```CRON_TZ``` variable, but only works on INSIDE of cronjob(processes which started by cron), not the excute time itself.\
+Need to change whole server timezone to run cronjob locally
 
 
 

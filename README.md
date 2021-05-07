@@ -109,5 +109,20 @@ sudo service cron start
 It is available to specify timezone by using ```CRON_TZ``` variable, but only works on INSIDE of cronjob(processes which started by cron), NOT the EXECUTE TIME itself.\
 Need to change whole server timezone to run cronjob locally.
 
+## 5. Others
+### 5.1. Shell
+#### 5.1.1. Check default Shell
+``` sh
+echo $SHELL
+```
 
+#### 5.1.2. Set Alias (bash)
+``` sh
+cd ~
+vi .bashrc
+
+# USER ALIAS
+alias log='cd /home/testuser/Logs/'
+alias prj='cd /home/testuser/Projects/'
+```
 

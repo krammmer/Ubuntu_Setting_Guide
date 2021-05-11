@@ -98,6 +98,11 @@ sudo pip3 install python-telegram-bot
 sudo pip3 install google-auth-oauthlib
 sudo pip3 install google-api-python-client
 ```
+#### 3.2.5. pyinstalive
+``` sh
+sudo pip3 install git+https://github.com/dvingerh/PyInstaLive.git@3.2.4
+```
+
 ## 4. Crontab
 ### 4.1. Change server timezone to JST
 ``` sh

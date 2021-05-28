@@ -35,6 +35,32 @@ ssh keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub testuser@0.0.0.0
 ssh -i ~/.ssh/id_rsa testuser@0.0.0.0
 ```
+### 2.5. Fail2Ban
+#### Install
+``` sh
+sudo apt update && sudo apt install fail2ban -y
+fail2ban-client -V
+sudo vi /etc/fail2ban/jail.local
+```
+#### Contents for 'jail.local'
+``` sh
+[DEFAULT]
+# IPs to NOT to ban
+ignoreip = 127.0.0.1/8
+
+# while try fails in "findtime" over "maxretry" count, ban ip for "bantime"
+findtime = 86400
+bantime = 86400
+maxretry = 5
+
+# How to ban: if using firewalld then 'firewallcmd-new'
+# if using iptables then 'iptables-multiport'
+banaction = iptables-multiport
+
+# enable ban protection for ssh
+[sshd]
+enabled = true
+```
 
 ## 3. Install
 ### 3.1. apt-get

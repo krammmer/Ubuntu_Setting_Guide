@@ -61,6 +61,10 @@ banaction = iptables-multiport
 [sshd]
 enabled = true
 ```
+#### Check Ban status
+```
+sudo fail2ban-client status sshd
+```
 
 ## 3. Install
 ### 3.1. apt-get

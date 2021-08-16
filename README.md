@@ -132,6 +132,12 @@ sudo pip3 install google-api-python-client
 ``` sh
 sudo pip3 install git+https://github.com/dvingerh/PyInstaLive.git@3.2.4
 ```
+#### 3.2.6. Django
+``` sh
+sudo pip3 install Django
+sudo pip3 install djangorestframework
+sudo pip3 install django-rest-knox
+```
 
 ## 4. Crontab
 ### 4.1. Change server timezone to JST

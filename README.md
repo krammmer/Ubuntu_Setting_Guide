@@ -137,6 +137,7 @@ sudo pip3 install git+https://github.com/dvingerh/PyInstaLive.git@3.2.4
 sudo pip3 install Django
 sudo pip3 install djangorestframework
 sudo pip3 install django-rest-knox
+sudo pip3 install django-cors-headers
 ```
 
 ## 4. Crontab

@@ -138,6 +138,22 @@ sudo pip3 install Django
 sudo pip3 install djangorestframework
 sudo pip3 install django-rest-knox
 sudo pip3 install django-cors-headers
+sudo pip3 install psycopg2-binary
+```
+
+### 3.3. PostgreSQL
+#### 3.3.1. Install
+``` sh
+sudo apt-get -y install postgresql
+```
+#### 3.3.2. Switch Account
+``` sh
+sudo -i -u postgres
+psql
+\q
+```
+#### 3.3.3. Create PostgreSQL Account
+```
 ```
 
 ## 4. Crontab

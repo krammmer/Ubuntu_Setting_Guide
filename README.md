@@ -114,6 +114,7 @@ pip3 list
 #### 3.2.1. youtube-dl
 ``` sh
 sudo pip3 install --upgrade youtube-dl
+sudo pip3 install --upgrade yt-dlp
 ```
 #### 3.2.2. Beautiful Soap
 ``` sh

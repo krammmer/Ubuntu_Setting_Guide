@@ -88,6 +88,8 @@ reference: https://olgabotvinnik.com/blog/googledrive-ubuntu/
 ``` sh
 sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
+sudo add-apt-repository ppa:alessandro-strada/google-drive-ocamlfuse-beta
+sudo apt-get install google-drive-ocamlfuse
 mkdir ~/GoogleDrive
 ```
 2. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)\

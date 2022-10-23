@@ -83,7 +83,8 @@ sudo apt install ffmpeg
 ffmpeg -version
 ```
 #### 3.1.4. google-drive-ocamlfuse (mount google drive as a folder)
-reference: https://olgabotvinnik.com/blog/googledrive-ubuntu/
+references: https://olgabotvinnik.com/blog/googledrive-ubuntu/
+https://github.com/astrada/google-drive-ocamlfuse
 1. install package
 ``` sh
 sudo add-apt-repository ppa:alessandro-strada/ppa

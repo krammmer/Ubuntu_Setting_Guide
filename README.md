@@ -93,16 +93,24 @@ sudo add-apt-repository ppa:alessandro-strada/google-drive-ocamlfuse-beta
 sudo apt-get install google-drive-ocamlfuse
 mkdir ~/GoogleDrive
 ```
-2. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)\
+2. config setting
+```
+cd .gdfuse
+cd default
+vi config
+oauth2_loopback=true
+save(:wq)
+```
+3. Get client_id and client_secret from [Google Drive API](https://console.cloud.google.com/marketplace/product/google/drive.googleapis.com/)\
 Credentials - OAuth 2.0 Client IDs - Client ID & Client Secret
-3. run google-drive-ocamlfuse with headless mode
+4. run google-drive-ocamlfuse with headless mode
 ``` sh
 google-drive-ocamlfuse ~/GoogleDrive -headless -id something1234.apps.googleusercontent.com -secret yoursecrethere
 ```
-4. copy link generated and open ```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```
-5. enter verification code from browser.
-6. ```Access token retrieved correctly.```
-7. done.
+5. copy link generated and open ```https://accounts.google.com/o/oauth2/auth?client_id=REDACTED```
+6. enter verification code from browser(URL).
+7. ```Access token retrieved correctly.```
+8. done.
 
 _**(\*need to re-mount everytime after reboot -> crontab)**_
 ``` sh

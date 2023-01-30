@@ -63,6 +63,7 @@ enabled = true
 ```
 #### Check Ban status
 ```
+/etc/init.d/fail2ban start
 sudo fail2ban-client status sshd
 ```
 

@@ -211,6 +211,7 @@ sudo apt update
 #### 5.2.3. Install specific Python version
 ```
 sudo apt install python3.8
+sudo apt install python3.8-distutils
 ```
 #### 5.2.4.
 ```

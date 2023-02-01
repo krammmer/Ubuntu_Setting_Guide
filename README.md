@@ -126,7 +126,7 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable
 google-chrome --version
 ```
-Download Chrome driver at [HERE](https://sites.google.com/a/chromium.org/chromedriver/)\
+Download Chrome driver at [HERE](https://sites.google.com/chromium.org/driver/)\
 copy driver's link and download with wget and unzip
 ```
 wget -N LINK

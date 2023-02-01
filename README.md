@@ -213,7 +213,7 @@ sudo apt update
 sudo apt install python3.8
 sudo apt install python3.8-distutils
 ```
-#### 5.2.4.
+#### 5.2.4. Change default alias
 ```
 update-alternatives --install /usr/bin/python3 python /usr/bin/python3.8 1
 sudo update-alternatives --config python

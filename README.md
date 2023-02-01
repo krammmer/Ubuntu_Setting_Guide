@@ -125,7 +125,12 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt-get update
 sudo apt-get install google-chrome-stable
 google-chrome --version
-
+```
+Download Chrome driver at [HERE](https://sites.google.com/a/chromium.org/chromedriver/)
+copy driver's link and download with wget and unzip
+```
+wget -N LINK
+unzip chromedriver_linux64.zip
 ```
 
 ### 3.2. python packages

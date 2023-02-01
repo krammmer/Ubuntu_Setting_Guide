@@ -127,10 +127,14 @@ sudo apt-get install google-chrome-stable
 google-chrome --version
 ```
 Download Chrome driver at [HERE](https://sites.google.com/chromium.org/driver/)\
-copy driver's link and download with wget and unzip
+Copy driver's link and download with wget and unzip
 ```
 wget -N LINK
 unzip chromedriver_linux64.zip
+```
+Install xvfb
+```
+sudo apt-get install xvfb
 ```
 
 ### 3.2. python packages

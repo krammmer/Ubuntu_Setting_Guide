@@ -197,3 +197,18 @@ alias log='cd /home/testuser/Logs/'
 alias prj='cd /home/testuser/Projects/'
 ```
 
+### 5.2. Downgrade Python
+#### 5.2.1. Install add-apt-repository
+```
+sudo apt update
+sudo apt install -y software-properties-common
+```
+#### 5.2.2. Add ppa repository
+```
+sudo apt-add-repository ppa:deadsnakes/ppa
+sudo apt update
+```
+#### 5.2.3. Install specific Python version
+```
+sudo apt install python3.8
+```

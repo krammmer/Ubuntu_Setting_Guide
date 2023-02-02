@@ -87,6 +87,8 @@ ffmpeg -version
 references: https://olgabotvinnik.com/blog/googledrive-ubuntu/ 
 \
 https://github.com/astrada/google-drive-ocamlfuse
+\
+https://github.com/astrada/google-drive-ocamlfuse/issues/764
 1. install package
 ``` sh
 sudo add-apt-repository ppa:alessandro-strada/ppa
@@ -97,7 +99,10 @@ mkdir ~/GoogleDrive
 ```
 2. config setting
 ```
+cd ~
+mkdir .gdfuse
 cd .gdfuse
+mkdir default
 cd default
 vi config
 oauth2_loopback=true
